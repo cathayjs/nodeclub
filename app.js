@@ -104,6 +104,8 @@ app.use(session({
   saveUninitialized: false,
 }));
 
+app.use(require('./middlewares/cathay_sso.js'));
+
 // oauth 中间件
 app.use(passport.initialize());
 
